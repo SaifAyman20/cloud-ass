@@ -1,0 +1,9 @@
+FROM python:latest
+
+WORKDIR /app
+
+COPY . .
+
+RUN pip install nltk  # Replace with your specific libraries
+
+CMD [ "python", "your_script.py" ]
